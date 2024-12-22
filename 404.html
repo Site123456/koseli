@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="keywords" content="Buffet indien offrant une variété de plats authentiques et savoureux.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="follow">
+<meta name="robots" content="index, follow">
 <title>Koseli | Page en construction</title>
 <style>
 *, body{overflow: hidden;}
@@ -33,9 +33,32 @@ overflow-y: auto;
 a {
 text-decoration: none;
 }
+#hider {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 9;
+background-color: #ffffff;
+width: 100%;
+height: 100%;
+overflow: hidden;
+pointer-events: none;
+animation: fadeOut 2s forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 </style>
 </head>
 <body>
+<div id="hider"></div>
 <div id="canvas"></div>
 <div id="banner" class="card border-0" style="max-width: 600px;width: 100%;">
     <img src="https://koseli.fr/banner.jpg" alt="">
