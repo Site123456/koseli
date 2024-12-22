@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="keywords" content="Buffet indien offrant une variété de plats authentiques et savoureux.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="follow">
 <title>Koseli | Page en construction</title>
 <style>
 *, body{overflow: hidden;}
@@ -47,6 +47,37 @@ overflow: hidden;
 pointer-events: none;
 animation: fadeOut 2s forwards;
 }
+.b {
+position: fixed;
+z-index: -2;
+top: 0;
+bottom: 0;
+height: 100%;
+left: 0;
+right: 0;
+width: 100%;
+background: rgb(255,0,192);
+background: -moz-linear-gradient(332deg, rgba(255,0,192,1) 0%, rgba(138,0,255,1) 100%);
+background: -webkit-linear-gradient(332deg, rgba(255,0,192,1) 0%, rgba(138,0,255,1) 100%);
+background: linear-gradient(332deg, rgba(255,0,192,1) 0%, rgba(138,0,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff00c0",endColorstr="#8a00ff",GradientType=1);
+}
+.l {
+position: fixed;
+z-index: -1;
+top: 0;
+bottom: 0;
+height: 100%;
+left: 0;
+right: 0;
+width: 100%;
+background-image: url('https://koseli.fr/banner_buffet.jpg');
+background-size: cover;
+opacity: 0.5;
+}
+.form-control {
+width: fit-content;
+}
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -58,28 +89,41 @@ animation: fadeOut 2s forwards;
 </style>
 </head>
 <body>
+<div class="b"></div>
+<div class="l"></div>
 <div id="hider"></div>
 <div id="canvas"></div>
-<div id="banner" class="card border-0" style="max-width: 600px;width: 100%;">
+<div id="banner" class="card border-0 mt-2 mb-4" style="max-width: 600px;width: 100%;height: fit-content;">
     <img src="https://koseli.fr/banner.jpg" alt="">
-    <div class="card mt-2">
+    <div class="card rounded-0 mt-2">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-4"><img src="https://koseli.fr/banner_ad.png" alt="" style="width: 100%;"/></div>
             <div class="col-8"><br>Ouverture:<br><strong>Le 31 Décembre 2024</strong>.<br>
                 Ce site est en cours de construction. Merci de votre compréhension.
             </div>
         </div>
-        <div class="card border-0 p-2 m-2 rounded">
+        <div class="card border-0 p-2 m-2 rounded-0">
             Plus d'informations:
             <ul>
                 <li>Tél:&nbsp;<a href="tel:0149349490">01 49 34 94 90</a></li>
                 <li>Adresse:&nbsp;<a href="https://www.google.fr/maps/place//data=!4m2!3m1!1s0x47e66d5e6fd04e21:0x75337aa1e8437f97?sa=X&ved=1t:8290&ictx=111">197 Av. Paul Vaillant Couturier, 93120 La Courneuve</a></li>
-                <li>Tiktok:&nbsp;<a href="https://www.tiktok.com/@koseli_fr">#koseli_fr</a></li>
-                <li>Twitter:&nbsp;<a href="https://x.com/koseli_fr">@koseli_fr</a></li>
+                <li class="row">
+                    <div class="col-12">Horaires:&nbsp;</div>
+                    <div class="col-4">Matin:&nbsp;</div>
+                    <div class="col-8"><input type="time" value="11:30" class="form-control d-inline" disabled/> - <input type="time" value="15:00" class="form-control d-inline mb-2" disabled/></div>
+                    <div class="col-4">Soir:&nbsp;</div>
+                    <div class="col-8"><input type="time" value="18:30" class="form-control d-inline" disabled/> - <input type="time" value="23:00" class="form-control d-inline" disabled/></div>
+                </li>
+            </ul>
+            <ul class="row">
+                <li class="col-6">Tiktok:&nbsp;<a href="https://www.tiktok.com/@koseli_fr">#koseli_fr</a></li>
+                <li class="col-6">Twitter:&nbsp;<a href="https://x.com/koseli_fr">@koseli_fr</a></li>
+                <li class="col-6">Instagram:&nbsp;<a href="https://www.instagram.com/koseli_fr/">koseli_fr</a></li>
+                <li class="col-6">Facebook:&nbsp;<a href="https://www.facebook.com/profile.php?id=61571072216392">Koseli France</a></li>
             </ul>
         </div>
-</div>
-    <br>
+    </div>
+    <div class="w-100 p-2 text-center">&copy;2024, koseli.fr.</div>
 </div>
 </body>
 </html>
