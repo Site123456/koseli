@@ -24,27 +24,39 @@
 body {
 display: flex;
 justify-content: center;
-align-items: center;
 width: 100%;
 height: 100vh;
+padding-top: 10px;
+overflow-x: hidden;
+overflow-y: auto;
+}
+a {
+text-decoration: none;
 }
 </style>
 </head>
 <body>
 <div id="canvas"></div>
-<div id="banner" class="card border-0" style="max-width: 600px;width: 100%;display: flex;">
+<div id="banner" class="card border-0" style="max-width: 600px;width: 100%;">
     <img src="https://koseli.fr/banner.jpg" alt="">
-    <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-6"><img src="https://koseli.fr/banner_ad.png" alt="" style="width: 100%;"/></div>
-        <div class="col-6">Ouverture:<br><strong>Le 31 Décembre 2024</strong><br><br>Plus d'informations:
+    <div class="card mt-2">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-4"><img src="https://koseli.fr/banner_ad.png" alt="" style="width: 100%;"/></div>
+            <div class="col-8"><br>Ouverture:<br><strong>Le 31 Décembre 2024</strong>.<br>
+                Ce site est en cours de construction. Merci de votre compréhension.
+            </div>
+        </div>
+        <div class="card border-0 p-2 m-2 rounded">
+            Plus d'informations:
             <ul>
                 <li>Tél:&nbsp;<a href="tel:0149349490">01 49 34 94 90</a></li>
                 <li>Adresse:&nbsp;<a href="https://www.google.fr/maps/place//data=!4m2!3m1!1s0x47e66d5e6fd04e21:0x75337aa1e8437f97?sa=X&ved=1t:8290&ictx=111">197 Av. Paul Vaillant Couturier, 93120 La Courneuve</a></li>
+                <li>Tiktok:&nbsp;<a href="https://www.tiktok.com/@koseli_fr">#koseli_fr</a></li>
+                <li>Twitter:&nbsp;<a href="https://x.com/koseli_fr">@koseli_fr</a></li>
             </ul>
-            <br>
-            Ce site est en cours de construction. Merci de votre compréhension.
         </div>
-    </div>
+</div>
+    <br>
 </div>
 </body>
 </html>
