@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Koseli" />
+<meta property="og:title" content="Koseli | 404" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://koseli.fr" />
+<meta property="og:url" content="https://koseli.fr/404.html" />
 <meta property="og:image" content="https://koseli.fr/logo.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://koseli.fr/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://koseli.fr/favicon-32x32.png">
@@ -13,14 +13,15 @@
 <link rel="manifest" href="https://koseli.fr/site.webmanifest">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <meta property="og:description" content="Restaurant Buffet indien offrant une variété de plats authentiques et savoureux." />
+<link rel="canonical" href="https://koseli.fr/404.html">
 <meta name="description" content="Buffet indien offrant une variété de plats authentiques et savoureux.">
 <meta name="theme-color" content="#ffffff">
 <meta name="keywords" content="Buffet indien offrant une variété de plats authentiques et savoureux.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="robots" content="index, follow">
-<title>Koseli | Page en construction</title>
+<meta name="robots" content="noindex, follow">
+<title>Koseli | 404</title>
 <style>
-*, body{overflow: hidden;}
+* {overflow: hidden;}
 body {
 display: flex;
 justify-content: center;
@@ -28,7 +29,8 @@ width: 100%;
 height: 100vh;
 padding-top: 10px;
 overflow-x: hidden;
-overflow-y: auto;
+overflow-y: hidden;
+align-items: center;
 }
 a {
 text-decoration: none;
@@ -47,21 +49,6 @@ overflow: hidden;
 pointer-events: none;
 animation: fadeOut 3s forwards;
 }
-.b {
-position: fixed;
-z-index: -2;
-top: 0;
-bottom: 0;
-height: 100%;
-left: 0;
-right: 0;
-width: 100%;
-background: rgb(255,0,0);
-background: -moz-linear-gradient(332deg, rgba(255,0,0,1) 0%, rgba(0,255,177,1) 100%);
-background: -webkit-linear-gradient(332deg, rgba(255,0,0,1) 0%, rgba(0,255,177,1) 100%);
-background: linear-gradient(332deg, rgba(255,0,0,1) 0%, rgba(0,255,177,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#00ffb1",GradientType=1);
-}
 .l {
 position: fixed;
 z-index: -1;
@@ -71,7 +58,7 @@ height: 100%;
 left: 0;
 right: 0;
 width: 100%;
-background-image: url('https://koseli.fr/banner_buffet.jpg');
+background-image: url('https://koseli.fr/img/momos.jpg');
 background-size: cover;
 opacity: 0.5;
 }
@@ -89,20 +76,40 @@ width: fit-content;
 </style>
 </head>
 <body>
-<div class="b"></div>
 <div class="l"></div>
 <div id="hider"></div>
 <div id="canvas"></div>
-<div id="banner" class="card border-0 mt-2 mb-4" style="max-width: 600px;width: 100%;height: fit-content;">
-    <img src="https://koseli.fr/banner.jpg" alt="">
-    <div class="card rounded-0 mt-2">
+<div id="banner" class="card border-0 mt-2 mb-4" style="max-width: 600px;width: 100%;height: fit-content;max-height: 100vh;">
+    <div class="rounded-0 mt-2" style="height: fit-content;max-height: calc(100vh - 30px);overflow-x: hidden;overflow-y: auto;">
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-4"><img src="https://koseli.fr/banner_ad.png" alt="" style="width: 100%;"/></div>
-            <div class="col-8"><br>Ouverture:<br><strong>Le 31 Décembre 2024</strong>.<br>
-                Ce site est en cours de construction. Merci de votre compréhension.
+            <div class="col-4"><img src="https://koseli.fr/img/404.png" alt="" style="width: 100%;margin: 10px;"/></div>
+            <div class="col-8">
+                <h2><strong>404 Erreur</strong></h2>
+                Cette page n'existe pas ou n'existe plus en tout cas le lien suivant:
+                <div class="input-group rounded d-flex justify-content-center align-items-center p-2">
+                    <input id="urlinput" type="url" value="https://koseli.fr/404.html" placeholder="https://koseli.fr/404.html" class="form-control m-2 me-0 p-2" style="height: 40px;" onclick="copyText();"/>
+                    <label for="urlinput" id="urllabel" class="btn border p-1 d-flex justify-content-center align-content-center" style="height: 40px;" onclick="copyText();">Copier</label>
+                </div>
+                <br>Merci de votre compréhension.<br>
+                <br>
             </div>
         </div>
-        <div class="card border-0 p-2 m-2 rounded-0">
+        <div class="card border-0 p-2 m-2 rounded-0">En attendant, vous pouvez acceder à:<br>
+                <ul>
+                    <li>
+                        -&nbsp;<a href="https://koseli.fr/?f=404" class="text-decoration-underline p-2">L'Acceuil</a>
+                    </li>
+                    <li>
+                        -&nbsp;<a href="https://koseli.fr/menu/?f=404" class="text-decoration-underline p-2">Notre Carte</a>
+                    </li>
+                </ul>
+            Suivez nous sur:
+            <ul class="row">
+                <li class="col-6">Tiktok:&nbsp;<a href="https://www.tiktok.com/@koseli_fr">#koseli_fr</a></li>
+                <li class="col-6">Twitter:&nbsp;<a href="https://x.com/koseli_fr">@koseli_fr</a></li>
+                <li class="col-6">Instagram:&nbsp;<a href="https://www.instagram.com/koseli_fr/">koseli_fr</a></li>
+                <li class="col-6">Facebook:&nbsp;<a href="https://www.facebook.com/profile.php?id=61571072216392">Koseli France</a></li>
+            </ul>
             Plus d'informations:
             <ul>
                 <li>Tél:&nbsp;<a href="tel:0149349490">01 49 34 94 90</a></li>
@@ -113,15 +120,28 @@ width: fit-content;
                     <div class="col-12 d-flex justify-content-center align-items-center"><input type="time" value="18:30" class="form-control bg-transparent d-inline-block" disabled/>&nbsp;-&nbsp;<input type="time" value="23:00" class="form-control bg-transparent d-inline-block" disabled/></div>
                 </li>
             </ul>
-            <ul class="row">
-                <li class="col-6">Tiktok:&nbsp;<a href="https://www.tiktok.com/@koseli_fr">#koseli_fr</a></li>
-                <li class="col-6">Twitter:&nbsp;<a href="https://x.com/koseli_fr">@koseli_fr</a></li>
-                <li class="col-6">Instagram:&nbsp;<a href="https://www.instagram.com/koseli_fr/">koseli_fr</a></li>
-                <li class="col-6">Facebook:&nbsp;<a href="https://www.facebook.com/profile.php?id=61571072216392">Koseli France</a></li>
-            </ul>
         </div>
     </div>
     <div class="w-100 p-2 text-center">&copy;2024, koseli.fr.</div>
 </div>
+<div class="opacity-0" style="position: fixed;top: 100vh;" id="url"></div>
+<script>
+async function copyText() {
+    let text = window.location || "https://koseli.fr/404.html";
+    try {
+        await navigator.clipboard.writeText(text);
+        document.getElementById("urllabel").remove();
+        document.getElementById("urlinput").style.border ="1px solid green";
+        document.getElementById("urlinput").style.outline ="1px solid green";
+        document.getElementById("urlinput").style.pointerEvents ="none";
+        document.getElementById("urlinput").disabled = true;
+    } catch (err) {
+        console.error('Failed to copy text: ', err);
+    }
+}
+let url = window.location || "https://koseli.fr/404.html";
+document.getElementById("url").innerText = url;
+document.getElementsByTagName('input')[0].value = url;
+</script>
 </body>
 </html>
